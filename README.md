@@ -6,7 +6,6 @@
 [![Mergify Status][mergify-status]][mergify]
 
 <!-- links -->
-[godoc]: http://godoc.org/github.com/lupinthe14th/hackerrank
 [travis]: https://travis-ci.org/lupinthe14th/hackerrank
 [goreportcard]: https://goreportcard.com/report/github.com/lupinthe14th/hackerrank
 [coveralls]: https://coveralls.io/github/lupinthe14th/hackerrank?branch=master
