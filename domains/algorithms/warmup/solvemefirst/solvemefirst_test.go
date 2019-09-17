@@ -15,9 +15,9 @@ var cases = []struct {
 func TestSolveMeFirst(t *testing.T) {
 	for _, tt := range cases {
 		t.Run(fmt.Sprintf("a: %d, b: %d", tt.a, tt.b), func(t *testing.T) {
-			actual := solveMeFirst(tt.a, tt.b)
-			if actual != tt.want {
-				t.Errorf("%d, want: %d", actual, tt.want)
+			got := solveMeFirst(tt.a, tt.b)
+			if got != tt.want {
+				t.Errorf("%d, want: %d", got, tt.want)
 			}
 		})
 	}
