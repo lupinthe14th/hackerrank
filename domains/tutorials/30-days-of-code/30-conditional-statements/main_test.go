@@ -12,7 +12,11 @@ var cases = []struct {
 }{
 	{input: 3, want: "Weird"},
 	{input: 24, want: "Not Weird"},
-	{input: 24, want: "Not Weird"},
+	{input: 18, want: "Weird"},
+	{input: 29, want: "Weird"},
+	{input: 5, want: "Weird"},
+	{input: 100, want: "Not Weird"},
+	{input: 20, want: "Weird"},
 }
 
 func TestPrintConditionalAction(t *testing.T) {
