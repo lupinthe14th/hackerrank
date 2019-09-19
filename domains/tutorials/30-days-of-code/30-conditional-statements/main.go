@@ -44,7 +44,7 @@ func main() {
 	N := int32(NTemp)
 	printString, err := printConditionalAction(N)
 	checkError(err)
-	fmt.Println(printString)
+	fmt.Print(printString)
 }
 
 func readLine(reader *bufio.Reader) string {
