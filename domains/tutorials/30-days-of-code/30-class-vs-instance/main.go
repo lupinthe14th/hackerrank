@@ -25,7 +25,7 @@ func (p person) amIOld() {
 	case p.age < 13:
 		fmt.Println("You are young.")
 	case p.age >= 13 && p.age < 18:
-		fmt.Println("You are teenager.")
+		fmt.Println("You are a teenager.")
 	default:
 		fmt.Println("You are old.")
 	}
