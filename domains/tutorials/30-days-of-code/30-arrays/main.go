@@ -13,7 +13,7 @@ import (
 func PrintReverseArray(arr []int32) {
 	for i := len(arr) - 1; i >= 0; i-- {
 		if i == 0 {
-			fmt.Println(arr[i])
+			fmt.Print(arr[i])
 		} else {
 			fmt.Printf("%d ", arr[i])
 		}
