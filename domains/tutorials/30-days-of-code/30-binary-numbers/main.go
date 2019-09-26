@@ -17,11 +17,14 @@ func BinaryNumber(n int32) int {
 
 	c := 0
 	for i, v := range s {
-		if v == '0' || i == len(s)-1 {
+		if v == '1' {
+			c++
+			if i == len(s)-1 {
+				stack = append(stack, c)
+			}
+		} else {
 			stack = append(stack, c)
 			c = 0
-		} else {
-			c++
 		}
 	}
 	sort.Ints(stack)
