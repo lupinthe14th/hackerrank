@@ -8,10 +8,12 @@ import (
 var cases = []struct {
 	id    int
 	input int32
-	want  int32
+	want  int
 }{
 	{id: 1, input: 5, want: 1},
 	{id: 2, input: 13, want: 2},
+	{id: 3, input: 100000, want: 2},
+	{id: 4, input: 99999, want: 4},
 }
 
 func TestBinaryNumber(t *testing.T) {

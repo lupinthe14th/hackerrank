@@ -5,23 +5,27 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
 
-func BinaryNumber(n int32) int32 {
+func BinaryNumber(n int32) int {
 	s := fmt.Sprintf("%b", n)
 
-	out := s[:len(s)-1]
+	var stack []int
 
-	count := make(map[rune]int32)
-
-	for _, v := range out {
-		if v == '1' {
-			count[v]++
+	c := 0
+	for i, v := range s {
+		if v == '0' || i == len(s)-1 {
+			stack = append(stack, c)
+			c = 0
+		} else {
+			c++
 		}
 	}
-	return count['1']
+	sort.Ints(stack)
+	return stack[len(stack)-1]
 }
 
 func main() {
