@@ -13,7 +13,8 @@ var cases = []struct {
 	{id: 1, input: 5, want: 1},
 	{id: 2, input: 13, want: 2},
 	{id: 3, input: 100000, want: 2},
-	{id: 4, input: 99999, want: 4},
+	{id: 4, input: 99999, want: 5},
+	{id: 5, input: 439, want: 3},
 }
 
 func TestBinaryNumber(t *testing.T) {
