@@ -20,6 +20,14 @@ func TestHourglassMax(t *testing.T) {
 			{0, 0, 1, 2, 4, 0},
 		},
 		want: 19},
+		{id: 2, input: [][]int32{
+			{1, 1, 1, 0, 0, 0},
+			{0, 1, 0, 0, 0, 0},
+			{1, 1, 1, 0, 0, 0},
+			{0, 9, 2, -4, -4, 0},
+			{0, 0, 0, -2, 0, 0},
+			{0, 0, -1, -2, -4, 0},
+		}, want: 13},
 	}
 	for _, tt := range cases {
 		t.Run(fmt.Sprint(tt.id), func(t *testing.T) {
@@ -43,6 +51,9 @@ func TestHourglassSum(t *testing.T) {
 		{id: 2, input: [][]int32{{2, 4, 4},
 			{0, 2, 0},
 			{1, 2, 4}}, want: 19},
+		{id: 3, input: [][]int32{{0, 1, 0},
+			{1, 1, 1},
+			{0, 9, 2}}, want: 13},
 	}
 	for _, tt := range cases {
 		t.Run(fmt.Sprint(tt.id), func(t *testing.T) {

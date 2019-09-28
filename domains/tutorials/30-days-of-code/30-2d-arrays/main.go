@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -13,7 +14,9 @@ func hourglassSum(matrix [][]int32) int32 {
 	var sum int32
 	for i := 0; i < 3; i++ {
 		for j := 0; j < 3; j++ {
-			sum += matrix[i][j]
+			if !(i == 1 && (j == 0 || j == 2)) {
+				sum += matrix[i][j]
+			}
 		}
 	}
 	return sum
@@ -28,6 +31,8 @@ func hourglassMax(matrix [][]int32) int32 {
 			m = append(m, matrix[i+1][j:j+3])
 			m = append(m, matrix[i+2][j:j+3])
 			sum := hourglassSum(m)
+			log.Printf("sum: %d", sum)
+			log.Printf("max: %d", max)
 			if max < sum {
 				max = sum
 			}
