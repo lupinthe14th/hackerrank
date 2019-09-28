@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"io"
-	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -31,8 +30,6 @@ func hourglassMax(matrix [][]int32) int32 {
 			m = append(m, matrix[i+1][j:j+3])
 			m = append(m, matrix[i+2][j:j+3])
 			sum := hourglassSum(m)
-			log.Printf("sum: %d", sum)
-			log.Printf("max: %d", max)
 			if max < sum {
 				max = sum
 			}
