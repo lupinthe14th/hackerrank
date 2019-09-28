@@ -23,6 +23,7 @@ func hourglassSum(matrix [][]int32) int32 {
 
 func hourglassMax(matrix [][]int32) int32 {
 	var max int32
+	max = -9 * 6
 	for i := 0; i <= 3; i++ {
 		for j := 0; j <= 3; j++ {
 			m := make([][]int32, 0, 3)
