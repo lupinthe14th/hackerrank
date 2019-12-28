@@ -1,0 +1,12 @@
+select
+  ID,
+  NAME,
+  COUNTRYCODE,
+  DISTRICT,
+  POPULATION
+from
+  CITY
+where
+  COUNTRYCODE = "USA"
+  and POPULATION > 100000
+;
