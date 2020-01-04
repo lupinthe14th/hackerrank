@@ -1,0 +1,9 @@
+select
+  ID,
+  NAME,
+  COUNTRYCODE,
+  DISTRICT,
+  POPULATION
+from
+  CITY
+;
