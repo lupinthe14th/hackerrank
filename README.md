@@ -1,13 +1,7 @@
 # hackerrank
-
-[![Travis](https://img.shields.io/travis/lupinthe14th/hackerrank.svg?style=flat-square)][travis]
+[![CI](https://github.com/lupinthe14th/hackerrank/actions/workflows/go.yml/badge.svg)](https://github.com/lupinthe14th/hackerrank/actions/workflows/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/lupinthe14th/hackerrank)][goreportcard]
-[![Coverage Status](https://coveralls.io/repos/github/lupinthe14th/hackerrank/badge.svg?branch=master)][coveralls]
-[![Mergify Status][mergify-status]][mergify]
+[![codecov](https://codecov.io/gh/lupinthe14th/hackerrank/branch/main/graph/badge.svg?token=s2Kq9dU72M)](https://codecov.io/gh/lupinthe14th/hackerrank)
 
 <!-- links -->
-[travis]: https://travis-ci.org/lupinthe14th/hackerrank
 [goreportcard]: https://goreportcard.com/report/github.com/lupinthe14th/hackerrank
-[coveralls]: https://coveralls.io/github/lupinthe14th/hackerrank?branch=master
-[mergify]: https://mergify.io
-[mergify-status]: https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/lupinthe14th/hackerrank&style=flat
